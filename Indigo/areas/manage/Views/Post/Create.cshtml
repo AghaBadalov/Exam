@@ -1,0 +1,23 @@
+﻿
+@model Post 
+<div class="container" >
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label asp-for="Tittle" class="form-label">Tittle</label>
+            <input asp-for="Tittle" class="form-control" i>
+            <span asp-validation-for="Tittle" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Desc" class="form-label">Descroiption</label>
+            <input asp-for="Desc" class="form-control">
+            <span asp-validation-for="Desc" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ImageFile" class="form-label">IMage</label>
+            <input asp-for="ImageFile" class="form-control">
+            <span asp-validation-for="ImageFile" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>

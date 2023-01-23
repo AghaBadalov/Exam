@@ -10,7 +10,6 @@
     <Folder Include="Areas\manage\Controllers\" />
     <Folder Include="Areas\manage\Views\Account\" />
     <Folder Include="Areas\manage\Views\Dashboard\" />
-    <Folder Include="Areas\manage\Views\Post\" />
     <Folder Include="wwwroot\uploads\posts\" />
   </ItemGroup>
 

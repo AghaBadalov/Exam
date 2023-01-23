@@ -27,6 +27,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = YXJlYXNcbWFuYWdlXFZpZXdzXFBvc3RcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/User/Desktop/Tasks/Indigo/Indigo/areas/manage/Views/Post/DeletedPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = YXJlYXNcbWFuYWdlXFZpZXdzXFBvc3RcRGVsZXRlZFBvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User/Desktop/Tasks/Indigo/Indigo/areas/manage/Views/Post/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = YXJlYXNcbWFuYWdlXFZpZXdzXFBvc3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -45,6 +49,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/User/Desktop/Tasks/Indigo/Indigo/areas/manage/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = YXJlYXNcbWFuYWdlXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Tasks/Indigo/Indigo/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Tasks/Indigo/Indigo/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/Desktop/Tasks/Indigo/Indigo/Views/Home/Index.cshtml]

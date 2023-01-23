@@ -14,7 +14,8 @@ namespace Indigo.Models
         [Required]
         [StringLength(maximumLength: 50)]
         public string Tittle { get; set; }
-        
+        public bool IsDeleted { get; set; }
+
         [StringLength(maximumLength: 100)]
         public string? ImageUrl { get; set; }
         [NotMapped]

@@ -19,10 +19,38 @@ namespace Indigo.areas.manage.Controllers
         }
         public IActionResult Index()
         {
-            List<Post> posts = _context.Posts.ToList();
+            List<Post> posts = _context.Posts.Where(x=>x.IsDeleted==false).ToList();
 
             return View(posts);
         }
+        public IActionResult DeletedPost()
+        {
+            List<Post> posts =_context.Posts.Where(x=>x.IsDeleted==true).ToList();
+            return View(posts);
+        }
+        public IActionResult HardDelete(int id)
+        {
+            Post post = _context.Posts.FirstOrDefault(x => x.Id == id);
+            if (post == null) return NotFound();
+            string path1 = Path.Combine(_env.WebRootPath, "uploads/posts", post.ImageUrl);
+            if (System.IO.File.Exists(path1))
+            {
+                System.IO.File.Delete(path1);
+            }
+            //post.IsDeleted = true;
+            _context.Posts.Remove(post);
+            _context.SaveChanges();
+            return RedirectToAction("deletedpost");
+        }
+        public IActionResult Restore(int id)
+        {
+            Post post = _context.Posts.FirstOrDefault(x => x.Id == id);
+            if (post == null) return NotFound();
+            post.IsDeleted = false;
+            _context.SaveChanges();
+            return RedirectToAction("deletedpost");
+        }
+
         public IActionResult Create()
         {
             Post post = new Post();
@@ -60,6 +88,7 @@ namespace Indigo.areas.manage.Controllers
                 post.ImageFile.CopyTo(fileStream);
             }
             post.ImageUrl= filename;
+            post.IsDeleted = false;
             _context.Posts.Add(post);
             _context.SaveChanges();
             
@@ -77,7 +106,7 @@ namespace Indigo.areas.manage.Controllers
         [HttpPost]
         public IActionResult Update(Post post)
         {
-            if (!ModelState.IsValid) return View();
+            if (!ModelState.IsValid) return View(post);
             Post exstpost=_context.Posts.FirstOrDefault(x => x.Id == post.Id);
             if(exstpost is null) return NotFound();
             if(post.ImageFile != null)
@@ -113,6 +142,7 @@ namespace Indigo.areas.manage.Controllers
 
             exstpost.Desc = post.Desc;
             exstpost.Tittle = post.Tittle;
+            
             _context.SaveChanges();
             return RedirectToAction("index");
         }
@@ -120,12 +150,13 @@ namespace Indigo.areas.manage.Controllers
         {
             Post post = _context.Posts.FirstOrDefault(x => x.Id == id);
             if (post == null) return NotFound();
-            string path1 = Path.Combine(_env.WebRootPath, "uploads/posts", post.ImageUrl);
-            if (System.IO.File.Exists(path1))
-            {
-                System.IO.File.Delete(path1);
-            }
-            _context.Posts.Remove(post);
+            //string path1 = Path.Combine(_env.WebRootPath, "uploads/posts", post.ImageUrl);
+            //if (System.IO.File.Exists(path1))
+            //{
+            //    System.IO.File.Delete(path1);
+            //}
+            post.IsDeleted = true;
+            //_context.Posts.Remove(post);
             _context.SaveChanges();
             return RedirectToAction("index");
         }

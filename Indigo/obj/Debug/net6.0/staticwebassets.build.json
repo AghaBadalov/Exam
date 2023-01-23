@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3Uf/B9m9jl1OqEljlB+CgEa+FiLjZ4//4CNSkiG3zu8=",
+  "Hash": "XhrigKI1YgtlENllBdzrPCoMj1qfFUqg2Uft+T9TZII=",
   "Source": "Indigo",
   "BasePath": "_content/Indigo",
   "Mode": "Default",
@@ -31671,12 +31671,12 @@
       "OriginalItemSpec": "wwwroot\\manage\\vendor\\jquery-easing\\jquery.easing.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Tasks\\Indigo\\Indigo\\wwwroot\\uploads\\posts\\7b9c5776-650e-4625-b156-e549552e53aesave(extension).png",
+      "Identity": "C:\\Users\\User\\Desktop\\Tasks\\Indigo\\Indigo\\wwwroot\\uploads\\posts\\7c2d9aa0-9bd8-434e-83ab-f8b6ea91326bjsssdelete.png",
       "SourceId": "Indigo",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\User\\Desktop\\Tasks\\Indigo\\Indigo\\wwwroot\\",
       "BasePath": "_content/Indigo",
-      "RelativePath": "uploads/posts/7b9c5776-650e-4625-b156-e549552e53aesave(extension).png",
+      "RelativePath": "uploads/posts/7c2d9aa0-9bd8-434e-83ab-f8b6ea91326bjsssdelete.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31685,7 +31685,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\posts\\7b9c5776-650e-4625-b156-e549552e53aesave(extension).png"
+      "OriginalItemSpec": "wwwroot\\uploads\\posts\\7c2d9aa0-9bd8-434e-83ab-f8b6ea91326bjsssdelete.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Tasks\\Indigo\\Indigo\\wwwroot\\uploads\\posts\\9b66b276-4e58-46e2-8d42-05fcfff3e839jsssssssssss.png",
+      "SourceId": "Indigo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Tasks\\Indigo\\Indigo\\wwwroot\\",
+      "BasePath": "_content/Indigo",
+      "RelativePath": "uploads/posts/9b66b276-4e58-46e2-8d42-05fcfff3e839jsssssssssss.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\posts\\9b66b276-4e58-46e2-8d42-05fcfff3e839jsssssssssss.png"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\Tasks\\Indigo\\Indigo\\wwwroot\\uploads\\posts\\a4b9753c-8188-43d8-b054-5c97657ce2c1jsdelete1640.png",

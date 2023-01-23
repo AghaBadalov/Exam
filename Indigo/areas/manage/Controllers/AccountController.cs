@@ -23,6 +23,7 @@ namespace Indigo.areas.manage.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(AdminLoginVM adminLoginVM)
         {
+            if (!ModelState.IsValid) return View();
             AppUser user =await _usermanager.FindByNameAsync(adminLoginVM.UserName);
             if(user == null)
             {

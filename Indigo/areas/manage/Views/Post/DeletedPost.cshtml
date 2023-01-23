@@ -1,0 +1,46 @@
+﻿@model List<Post>
+@{
+    int counter = 0;
+}
+
+<table class="table">
+
+    <thead>
+        <div class="container" style="margin-top:5px;">
+            
+
+        <tr>
+            <th scope="col">Counter</th>
+            <th scope="col">Id</th>
+            <th scope="col">Tittle</th>
+            <th scope="col">Desc</th>
+            <th scope="col">Image</th>
+            <th scope="col">Actions</th>
+
+        </tr>
+        </div>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            counter++;
+            <tr>
+                <th scope="row">@counter</th>
+                <td>@item.Id</td>
+                <td>@item.Tittle</td>
+                <td>@item.Desc</td>
+                <td>
+                    <img style="max-width:100px" src="~/uploads/posts/@item.ImageUrl">
+                </td>
+                <td>
+
+                    <a asp-action="harddelete" asp-controller="post" asp-route-id="@item.Id" type="button" class="btn btn-danger">Delete</a>
+                    <a asp-action="restore" asp-controller="post" asp-route-id="@item.Id" type="button" class="btn btn-danger">Restore</a>
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+</table>
